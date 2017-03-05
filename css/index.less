@@ -1,0 +1,190 @@
+@import url(baseLess/layout);
+.fix-bg{
+    position: fixed;
+    z-index: -1;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 720px;
+    background: url(../img/images/banner-1.jpg) no-repeat center;
+}
+.nav-fix{
+    height: 70px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 1px 58px -16px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    .wrap{
+        &:after{
+            .clear();
+        }
+        .logo{
+            line-height: 70px;
+            float: left;
+            img{
+                width: 139px;
+                height: 41px;
+                vertical-align: middle;
+            }
+        }
+        .nav-con{
+            &:after{
+                .clear();
+            }
+            line-height: 70px;
+            float: right;
+            a{
+                float: left;
+                margin-left: 60px;
+                span{
+                    display: inline-block;
+                    padding: 6px 0;
+                    line-height: 1;
+                    font-size: 16px;
+                    color: #000;
+                    position:relative;
+                    &:after{
+                        content: '';
+                        position:absolute;
+                        bottom:0;
+                        left:0;
+                        width: 100%;
+                        height: 0;
+                        border-bottom: 2px solid #0072bb;
+                        border-bottom: 2px solid #fff\0;
+                        border-bottom: 2px solid #fff\9\0;
+                        transform-origin:50% 50%;
+                        transform: scale(0,1);
+                        transition:all .3s ease;
+                    }
+                }
+            }
+            a.cur,a:hover{
+                span{
+                    color: #0072bb;
+                    &:after{
+                        transform: scale(1,1);
+                        border-bottom: 2px solid #0072bb\9;
+                    }
+                }
+                
+            }
+        }
+    }   
+}
+.title{
+    color: #333;
+    text-align: center;
+    h2{
+        font-size: 48px;
+        padding-top: 76px;
+    }
+    p{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+}
+.slide-1{
+    background: #fff;
+    padding-bottom:30px;
+    .con{
+        background: url(../img/images/bg-1.jpg) no-repeat center bottom;
+        ul{
+            &:after{
+                .clear();
+            }
+            li{
+                float: left;
+                width: 50%;
+                text-align: center;
+                padding-bottom: 258px;
+                padding-top: 55px;
+                color: #333;
+                h2{
+                    font-size: 24px;
+                    line-height: 40px;
+                    padding-bottom: 12px;
+                    img{
+                        vertical-align: middle;
+                        margin-right: 10px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    line-height:24px;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+.slide-2{
+    background-color: #fff;
+    text-align: center;
+    img{
+        display: block;
+        margin: 0 auto;
+        padding: 100px 0;
+    }
+}
+.slide-3{
+    background: #f9f9fa;
+    height: 727px;
+    background: url(../img/images/bg-3.jpg) no-repeat center bottom;
+}
+.slide-4{
+    background-color: #fff;
+    text-align: center;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+.footer{
+    background: #373d41;
+    .wrap{
+        color: #d2dae0;
+        h2{
+            font-size: 18px;
+            padding: 27px 0 15px;
+        }
+        p{
+            line-height: 24px;
+            font-size: 14px;
+            padding-bottom: 36px;
+            color: #b1b6ba;
+        }
+        h4{
+            font-size: 18px;
+            padding-bottom: 42px;
+            span{
+                margin-right: 66px;
+            }
+        }
+    }
+    .qrcode{
+        position: absolute;
+        top: 40px;
+        right: 138px;
+        text-align: center;
+        img{
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        p{
+            color: #d2dae0;
+            font-size: 14px;
+        }
+    }
+    .copy{
+        background: #242b30;
+        line-height: 42px;
+        height: 42px;
+        color: #d2dae0;
+        text-align: center;
+    }
+}
