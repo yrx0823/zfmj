@@ -7,8 +7,34 @@
   height: 720px;
   background: url(../img/images/banner-1.jpg) no-repeat center;
 }
-.banner img {
-  width: 100%;
+.banner {
+  height: 720px;
+  background: url(../img/images/banner-img.jpg) no-repeat center;
+}
+.banner .wrap > div {
+  padding-left: 30px;
+}
+.banner .wrap .txt {
+  padding-top: 220px;
+  color: #fff;
+}
+.banner .wrap .txt h2 {
+  font-size: 48px;
+  padding-bottom: 30px;
+}
+.banner .wrap .txt p {
+  font-size: 24px;
+  padding-bottom: 60px;
+}
+.banner .wrap .qrcode img {
+  display: block;
+  width: 150px;
+}
+.banner .wrap .qrcode span {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 10px;
 }
 .nav-fix {
   height: 70px;
@@ -188,6 +214,7 @@
   text-align: center;
 }
 .footer .qrcode img {
+  width: 110px;
   display: block;
   margin: 0 auto;
   padding-bottom: 10px;
